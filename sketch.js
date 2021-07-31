@@ -25,7 +25,6 @@ function setup() {
 
   //level one
   block1 = new Block(300, 275, 30, 40);
-  console.log(block1);
   block2 = new Block(330, 275, 30, 40);
   block3 = new Block(360, 275, 30, 40);
   block4 = new Block(390, 275, 30, 40);
@@ -45,17 +44,17 @@ function setup() {
   //top
   block16 = new Block(390, 155, 30, 40);
   //bottom
-  block17 = new Block(630, 115, 30, 40);
-  block18 = new Block(660, 115, 30, 40);
-  block19 = new Block(690, 115, 30, 40);
-  block20 = new Block(720, 115, 30, 40);
-  block21 = new Block(750, 115, 30, 40);
-  //middle
-  block22 = new Block(660, 75, 30, 40);
-  block23 = new Block(690, 75, 30, 40);
-  block24 = new Block(720, 75, 30, 40);
+  blocks1 = new Block(640,175,30,40);
+  blocks2 = new Block(670,175,30,40);
+  blocks3 = new Block(700,175,30,40);
+  blocks4 = new Block(730,175,30,40);
+  blocks5 = new Block(760,175,30,40);
+  //level two
+  blocks6 = new Block(670,135,30,40);
+  blocks7 = new Block(700,135,30,40);
+  blocks8 = new Block(730,135,30,40);
   //top
-  block25 = new Block(690, 35, 30, 40);
+  blocks9 = new Block(700,95,30,40);
 
   polygon = Bodies.circle(100,250,25);
   World.add(world,polygon);
@@ -83,7 +82,7 @@ function draw() {
 
   strokeWeight(2);
   stroke(15);
-  fill("skyblue");
+
   block1.display();
   block2.display();
   block3.display();
@@ -91,32 +90,31 @@ function draw() {
   block5.display();
   block6.display();
   block7.display();
-  fill("pink");
+
   block8.display();
   block9.display();
   block10.display();
   block11.display();
   block12.display();
-  fill("turquoise");
+
   block13.display();
   block14.display();
   block15.display();
-  fill("grey");
+ 
   block16.display();
-  fill("skyblue")
-  block17.display();
-  block18.display();
-  block19.display();
-  block20.display();
-  block21.display();
-  fill("turquoise")
-  block22.display();
-  block23.display();
-  block24.display();
-  fill("pink")
-  block25.display();
 
-  
+  blocks1.display();
+  blocks2.display();
+  blocks3.display();
+  blocks4.display();
+  blocks5.display();
+
+  blocks6.display();
+  blocks7.display();
+  blocks8.display();
+
+  blocks9.display();
+
   image(polygonImg, polygon.position.x, polygon.position.y, 40,40);
   slingshot.display();
 
